@@ -2,16 +2,21 @@ namespace CloverReader;
 
 public class CloverCache
 {
-    private static readonly TimeSpan Ttl = TimeSpan.FromHours(1);
+    private readonly TimeSpan _ttl;
 
     private record CacheEntry(List<CloverSummaryEntry> Data, DateTime CachedAt);
 
     private readonly Dictionary<int, CacheEntry> _store = new();
 
+    public CloverCache(TimeSpan? ttl = null)
+    {
+        _ttl = ttl ?? TimeSpan.FromHours(1);
+    }
+
     public bool TryGet(int months, out List<CloverSummaryEntry> data)
     {
         if (_store.TryGetValue(months, out CacheEntry? entry) &&
-            DateTime.UtcNow - entry.CachedAt < Ttl)
+            DateTime.UtcNow - entry.CachedAt < _ttl)
         {
             data = entry.Data;
             return true;
