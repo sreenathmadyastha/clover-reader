@@ -1,0 +1,110 @@
+{
+  "data": {
+    "cloverSummary": [
+      {
+        "index": 1,
+        "month": "Feb 25",
+        "summary": {
+          "settledTransactionsTotal": 75,
+          "authorizedTransactionsTota": 120
+        }
+      },
+      {
+        "index": 2,
+        "month": "Mar 25",
+        "summary": {
+          "settledTransactionsTotal": 200,
+          "authorizedTransactionsTota": 0
+        }
+      },
+      {
+        "index": 3,
+        "month": "Apr 25",
+        "summary": {
+          "settledTransactionsTotal": 0,
+          "authorizedTransactionsTota": 350
+        }
+      },
+      {
+        "index": 4,
+        "month": "May 25",
+        "summary": {
+          "settledTransactionsTotal": 450,
+          "authorizedTransactionsTota": 180
+        }
+      },
+      {
+        "index": 5,
+        "month": "Jun 25",
+        "summary": {
+          "settledTransactionsTotal": 310,
+          "authorizedTransactionsTota": 275
+        }
+      },
+      {
+        "index": 6,
+        "month": "Jul 25",
+        "summary": {
+          "settledTransactionsTotal": 0,
+          "authorizedTransactionsTota": 0
+        }
+      },
+      {
+        "index": 7,
+        "month": "Aug 25",
+        "summary": {
+          "settledTransactionsTotal": 520,
+          "authorizedTransactionsTota": 410
+        }
+      },
+      {
+        "index": 8,
+        "month": "Sep 25",
+        "summary": {
+          "settledTransactionsTotal": 150,
+          "authorizedTransactionsTota": 90
+        }
+      },
+      {
+        "index": 9,
+        "month": "Oct 25",
+        "summary": {
+          "settledTransactionsTotal": 380,
+          "authorizedTransactionsTota": 0
+        }
+      },
+      {
+        "index": 10,
+        "month": "Nov 25",
+        "summary": {
+          "settledTransactionsTotal": 0,
+          "authorizedTransactionsTota": 225
+        }
+      },
+      {
+        "index": 11,
+        "month": "Dec 25",
+        "summary": {
+          "settledTransactionsTotal": 600,
+          "authorizedTransactionsTota": 475
+        }
+      },
+      {
+        "index": 12,
+        "month": "Jan 26",
+        "summary": {
+          "settledTransactionsTotal": 290,
+          "authorizedTransactionsTota": 130
+        }
+      },
+      {
+        "index": 13,
+        "month": "Feb 26",
+        "summary": {
+          "settledTransactionsTotal": 185,
+          "authorizedTransactionsTota": 340
+        }
+      }
+    ]
+  }
+}
