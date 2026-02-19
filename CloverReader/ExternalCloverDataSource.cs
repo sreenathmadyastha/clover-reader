@@ -25,10 +25,7 @@ public class ExternalCloverDataSource : ICloverDataSource
 
         List<CloverSummaryEntry> all = root?.Data?.CloverSummary ?? [];
 
-        // Return the latest `months` entries (highest index = most recent)
-        return all
-            .OrderBy(e => e.Index)
-            .TakeLast(months)
-            .ToList();
+        // Return entries within the requested date window from today
+        return MonthFilter.FilterToWindow(all, months);
     }
 }

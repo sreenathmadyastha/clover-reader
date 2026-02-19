@@ -7,11 +7,14 @@ public class CloverService
 
     private readonly ICloverDataSource _dataSource;
     private readonly CloverCache _cache;
+    private readonly Func<DateTime> _getToday;
 
-    public CloverService(ICloverDataSource dataSource, CloverCache cache)
+    public CloverService(ICloverDataSource dataSource, CloverCache cache,
+        Func<DateTime>? getToday = null)
     {
         _dataSource = dataSource;
         _cache = cache;
+        _getToday = getToday ?? (() => DateTime.Today);
     }
 
     public async Task<List<CloverSummaryEntry>> GetDataAsync(int months)
@@ -26,13 +29,14 @@ public class CloverService
             return cached;
         }
 
-        // 2. Derive from the smallest valid larger cached slab
+        // 2. Derive from the smallest valid larger cached slab using the date window
+        DateTime today = _getToday();
         foreach (int larger in ValidSlabs.Where(s => s > months))
         {
             if (_cache.TryGet(larger, out List<CloverSummaryEntry> superSet))
             {
                 Console.WriteLine($"[Cache] Derived {months}-month data from cached {larger}-month data.");
-                return superSet.OrderBy(e => e.Index).TakeLast(months).ToList();
+                return MonthFilter.FilterToWindow(superSet, months, today);
             }
         }
 
