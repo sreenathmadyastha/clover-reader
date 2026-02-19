@@ -1,0 +1,14 @@
+{
+  "id": "shared_acct_001",
+  "subscriberKey": "sponsor_acme:sub_west",
+  "ownerTenantId": "sponsor_acme:sub_west:bu_user_001",
+  "ownerBusinessUserId": "bu_user_001",
+  "accountId": "acct_001",
+  "accountType": "checking",
+  "accountName": "Primary Checking",
+  "accountNumber": "****4532",
+  "institutionId": "inst_chase",
+  "institutionName": "Chase Bank",
+  "sharedAt": "2026-02-15T...",
+  "status": "active"
+}

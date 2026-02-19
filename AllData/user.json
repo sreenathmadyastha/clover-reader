@@ -1,0 +1,13 @@
+{
+  "id": "user_sponsor_acme:sub_west:bu_user_001",
+  "tenantId": "sponsor_acme:sub_west:bu_user_001",
+  "sponsorId": "sponsor_acme",
+  "subscriberId": "sub_west",
+  "subscriberKey": "sponsor_acme:sub_west",
+  "businessUserId": "bu_user_001",
+  "allDataUserId": "ad_7f8g9h", // from ALL Data API provisioning
+  "email": "sreenath@acme.com",
+  "displayName": "Sreenath",
+  "provisionedAt": "2026-02-10T...",
+  "lastAccessedAt": "2026-02-19T..."
+}

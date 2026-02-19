@@ -1,0 +1,39 @@
+{
+  "id": "inst_sponsor_acme:sub_west:bu_user_001_chase",
+  "tenantId": "sponsor_acme:sub_west:bu_user_001",
+  "subscriberKey": "sponsor_acme:sub_west",
+  "institutionId": "inst_chase",
+  "institutionName": "Chase Bank",
+  "allDataConnectionId": "conn_abc123",
+  "connectionStatus": "active",
+  "accountCategory": "personal",
+
+  "accounts": [
+    {
+      "accountId": "acct_001",
+      "accountType": "checking",
+      "accountName": "Primary Checking",
+      "accountNumber": "****4532",
+      "isShared": true, // tracked here for owner's reference
+      "isActive": true
+    },
+    {
+      "accountId": "acct_002",
+      "accountType": "savings",
+      "accountName": "Emergency Fund",
+      "accountNumber": "****7891",
+      "isShared": false, // not shared
+      "isActive": true
+    },
+    {
+      "accountId": "acct_003",
+      "accountType": "moneyMarket",
+      "accountName": "Money Market Plus",
+      "accountNumber": "****2210",
+      "isShared": true,
+      "isActive": true
+    }
+  ],
+
+  "status": "active"
+}

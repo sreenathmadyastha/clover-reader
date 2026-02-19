@@ -1,0 +1,8 @@
+{
+  "id": "audit_uuid",
+  "tenantId": "sponsor_acme:sub_west:bu_user_001",
+  "subscriberKey": "sponsor_acme:sub_west",
+  "action": "AccountShared",
+  "targetAccountId": "ext_98765",
+  "timestamp": "2026-02-19T..."
+}
